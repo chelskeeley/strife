@@ -1,0 +1,183 @@
+//styles for game content box
+.mainContent {
+    padding: 40px;
+    position: relative;
+    display: flex;
+    @include smallDesk {
+        margin: 0 25px;
+    }
+    @media (max-width: 800px){
+        flex-direction: column;
+        align-items: center;
+    }
+    @media (max-width: 420px){
+        padding: 20px;
+    }
+}
+
+//styles for character card, left side
+
+.character {
+    margin-right: 40px;
+    margin-bottom: 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    @media (max-width: 800px){
+        margin-right: 0;
+    }
+}
+
+.card {
+    height: 200px;
+    min-width: 150px;
+    border-radius: 10px;
+    border: 1px solid #b3b3b3;
+    box-shadow: 3px 3px 0 rgba(0,0,0,0.3);
+    
+}
+
+.avatarIcon {
+    background: #1895C6;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 25px;
+    box-shadow: 3px 3px 15px rgba(0,0,0,0.4);
+    align-self: center;
+    position: relative;
+    top: 5px;
+    line-height: 0;
+    z-index: 10;
+    border: 3px solid #fff;
+    img {
+        filter: drop-shadow(2px 2px 0 rgba(0,0,0,0.6));
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.avatarName {
+    display: inline-block;
+    background: #1895C6;
+    padding: 5px;
+    p {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin: 10px 0;
+        text-shadow: 2px 2px 0 rgba(0,0,0,0.3);
+        text-align: center;
+        width: 100%;
+    }
+}
+
+//styles for text content, right side
+
+.textContent {
+    p {
+        line-height: 2.4rem;
+        font-weight: 500;
+    }
+    h3 {
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+}
+
+//styles for form elements
+
+input[type=submit] {
+    height: 40px;
+    width: 140px;
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background: #EA168C;
+    border-left: 5px solid #F273A8;
+    border-top: 5px solid #DF1587;
+    border-right: 5px solid #BF1275;
+    border-bottom: 5px solid #BF1275;
+}
+
+input[type=text]{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+    border: 0;
+    border-bottom: 2px solid #b3b3b3;
+}
+
+.radioContainerStyle {
+    margin-bottom: 15px;
+    min-height: 80px;
+}
+
+.radioContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    @media (max-width: 600px){
+        flex-direction: column;
+        align-items: center;
+    }
+    .radioBox1,
+    .radioBox2 {
+        width: 48%;
+        @media (max-width: 600px){
+            width: 70%;
+        }
+        @media (max-width: 500px){
+            width: 90%;
+        }
+    }
+}
+
+label {
+    display: block;
+    border-radius: 10px;
+    border: 2px dashed #b3b3b3;
+    height: 100%;
+    padding: 10px 15px;
+    font-weight: 500;
+}
+
+.labelStyle {
+    @media (max-width: 800px){
+        min-height: 80px;
+    }
+}
+
+input[type=radio]:checked + label {
+    box-shadow: 3px 3px 0 rgba(0,0,0,0.3);
+    background: #FCCA32;
+    border: 2px solid #FCCA32;
+}
+
+
+label:active,
+label:hover {
+    box-shadow: 3px 3px 0 rgba(0,0,0,0.3);
+    border: 2px solid #FCCA32;
+}
+
+label:hover{
+    background: #FEDC32;
+}
+label:active{
+    background: #FCCA32;
+}
+
+// to hide radio buttons
+.hide {
+    position: absolute;
+    left: -5000px;
+}

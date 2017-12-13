@@ -1,0 +1,176 @@
+
+header {
+    padding-top: 90px;
+    border-top: 1px solid #fff;
+}
+
+.headerContent {
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size:10rem;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    font-weight: 900;
+    @media (max-width: 580px){
+        font-size: 7.5rem;
+    }
+    @media (max-width: 470px){
+        font-size: 5rem;
+    }
+    ul {
+        display: flex;
+    }
+    li {
+        display: inline-block;
+        width: 90px;
+        height: 100px;
+        padding-left: 8px;
+        line-height: 9rem;
+        color: white;
+        text-shadow: 3px 3px 0 rgba(0,0,0,0.3);
+        margin: 0 1px;
+        box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+        @media (max-width: 580px){
+            width: 70px;
+            height: 80px;
+            line-height: 7.5rem;
+            padding-left: 6px;
+        }
+        @media (max-width: 470px){
+            width: 50px;
+            height: 60px;
+            line-height: 5rem;
+            padding-left: 4px;
+        }
+        &:nth-child(1){
+            background: #EA168C;
+            border-left: 5px solid #F273A8;
+            border-top: 5px solid #DF1587;
+            border-right: 5px solid #BF1275;
+            border-bottom: 5px solid #BF1275;
+        }
+        &:nth-child(2){
+            background: #1A9FD9;
+            border-left: 5px solid #1DAFEC;
+            border-top: 5px solid #1BA8E2;
+            border-right: 5px solid #1895C6;
+            border-bottom: 5px solid #1895C6;
+        }
+        &:nth-child(3){
+            background: #80B442;
+            border-left: 5px solid #90C549;
+            border-top: 5px solid #87BB46;
+            border-right: 5px solid #73A43C;
+            border-bottom: 5px solid #73A43C;
+        }
+        &:nth-child(4){
+            padding-left: 32px;
+            background: #FEDC32;
+            border-left:  5px solid #FEEF35;
+            border-top: 5px solid #FDE633;
+            border-right: 5px solid #FCCA32;
+            border-bottom: 5px solid #FCCA32;
+            width: 70px;
+            padding-left: 13px;
+            @media (max-width: 580px){
+                width: 55px;
+                padding-left: 9px;
+            }
+            @media (max-width: 470px){
+                width: 35px;
+                padding-left: 5px;
+            }
+            
+        }
+        &:nth-child(5){
+            background: #EA168C;
+            border-left: 5px solid #F273A8;
+            border-top: 5px solid #DF1587;
+            border-right: 5px solid #BF1275;
+            border-bottom: 5px solid #BF1275;
+            
+            
+        }
+        &:nth-child(6){
+            background: #80B442;
+            border-left: 5px solid #90C549;
+            border-top: 5px solid #87BB46;
+            border-right: 5px solid #73A43C;
+            border-bottom: 5px solid #73A43C;
+        }
+    }
+}
+
+
+h2 {
+    font-family: 'Rum Raisin', sans-serif;
+    padding-top: 10px;
+    margin: 0;
+    color: #fff;
+    font-size: 3.6rem;
+    text-shadow: 3px 3px 0 #888, 8px 8px 60px rgba(0,0,0,0.6);
+}
+
+
+.millennial {
+    position: absolute;
+    left: 20px;
+    top: -55px;
+}
+
+.the {
+    position: absolute;
+    left: -90px;
+    bottom: -73px;
+    font-size: 3.2rem;
+    z-index: -1;
+    left: 68px;
+    top: -80px;
+}
+
+.ofCircle {
+    position: absolute;
+    left: 52%;
+    transform: translateX(-50%);
+    top: -30px;
+    background: #fff;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+    @media (max-width: 580px){
+        left: auto;
+        right: 110px;
+        top: -42px;
+    }
+    @media (max-width: 470px){
+        right: -10px;
+    }    
+
+}
+
+.of {
+    position: absolute;
+    right: 3px;
+    transform: translateX(-53%);
+    bottom: 3px;
+    color: #EA168C;
+    text-shadow: none;
+    font-size: 2.8rem;
+    padding: 0;
+}
+
+.the,
+.millennial {
+    letter-spacing: 1px;
+}
+

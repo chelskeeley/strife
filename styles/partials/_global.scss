@@ -1,0 +1,92 @@
+//mixins
+$smallDesktopWidth: 940px;
+
+@mixin smallDesk {
+  @media (max-width: $smallDesktopWidth) {
+    @content;
+  }
+}
+
+//global styles
+
+html {
+    font-size: 62.5%;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    // width: 100vw;
+        // @include smallDesk {
+        //     height: 100%;
+        // }
+        background-image:url(../assets/landscape.png), url(../assets/clouds.jpg);
+    background-position: bottom, center;
+    background-repeat: repeat-x, no-repeat;
+    background-size: auto, cover;
+    background-attachment: fixed, fixed;
+    padding: 0;
+    margin: 0;
+    @media (min-width: 1400px) {
+        background-size: 100%, cover;
+    }
+    @media (max-width: 600px){
+        background-image: url(../assets/clouds.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        height: 100vh;
+    } 
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    // background-image:url(../assets/landscape.png), url(../assets/clouds.jpg);
+    // background-position: bottom, center;
+    // background-repeat: repeat-x, no-repeat;
+    // background-size: auto, cover;
+    // background-attachment: fixed, fixed;
+    // padding: 0;
+    // margin: 0;
+    // @media (min-width: 1400px) {
+    //     background-size: 100%, cover;
+    // }
+    // @media (max-width: 600px){
+    //     background-image: url(../assets/clouds.jpg);
+    //     background-size: cover;
+    //     background-attachment: fixed;
+    //     background-repeat: no-repeat;
+    //     height: 100vh;
+    // } 
+
+}
+
+.wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+ul,
+li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.mainContent {
+    background: white;
+    border-radius: 3px;
+    box-shadow: 3px 3px 15px rgba(0,0,0,0.3);
+}
+
+.footerContent{
+    margin-top: 20px;
+    text-align: center;
+    @include smallDesk {
+        margin: 0 25px;
+    }
+    @media (max-width: 420px){
+        padding: 20px;
+    }
+}
